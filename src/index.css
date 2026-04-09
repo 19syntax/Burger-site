@@ -1,12 +1,22 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: myRegularFont;
+  src: url(./assets/Bowlby_One/BowlbyOne-Regular.ttf);
+}
+@font-face {
+  font-family: myRegularSofiaFont;
+  src: url(./assets/Sofia_Sans/static/SofiaSans-Regular.ttf);
+}
+
 body {
   background-color: #1e1e1e;
   color: #e9e3dc;
-  font-family: "Bowlby One", sans-serif;
+  font-family: myRegularFont, sans-serif;
   font-style: normal;
+  font-display: optional;
 }
 
 .custom-sans {
-  font-family: "Sofia Sans", sans-serif;
+  font-family: myRegularSofiaFont, sans-serif;
 }

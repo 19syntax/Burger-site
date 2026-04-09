@@ -6,7 +6,7 @@ const BestSection = () => {
       <h1 className="md:text-[60px] text-[30px] text-[#D1EF53]">
         “ THE BEST BURGER I'VE EVER HAD “{" "}
       </h1>
-      <div className="w-full h-125.75 mt-14 bg-[url('../src/assets/burger2.jpg')] bg-cover border-4 border-[#E9E3DC] rounded-[30px]"></div>
+      <div className="w-full h-125.75 mt-14 bg-[url('../src/assets/burger2.webp')] bg-cover border-4 border-[#E9E3DC] rounded-[30px]"></div>
       <div className="md:mt-28 mt-14 text-center">
         <h1 className="md:w-223.75 mx-auto md:text-[70px] text-[35px] leading-[101.9%] mb-6">
           ORDER ONLINE OR COME VISIT US TODAY

@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <div>
           <h1>HOURS</h1>
-          <ul className="custom-sans font-medium mt-2">
+          <ul className="md:block flex gap-1 custom-sans font-medium mt-2">
             <li>Opens from</li>
             <li>11AM to</li>
             <li>11PM daily</li>
@@ -24,10 +24,13 @@ const Footer = () => {
         </div>
         <div className="my-10">
           <h1 className="">JOIN OUR NEWSLETTER</h1>
-          <div className="border p-2 mt-3 rounded-md">
-            <input type="email" className="text-[12px] font-medium outline-0" />
+          <div className="flex justify-between gap-1 border md:p-2 px-2 mt-3 rounded-md">
             <input
-              className="text-[12px] hover:text-[#D1EF53] cursor-pointer font-medium"
+              type="email"
+              className="flex-1 text-[12px] font-medium outline-0"
+            />
+            <input
+              className="text-[12px] py-1 px-3 hover:text-[#D1EF53] cursor-pointer font-medium"
               type="button"
               value="SUBMIT"
             />

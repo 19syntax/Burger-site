@@ -3,7 +3,7 @@ import React from "react";
 const OrderCol = () => {
   return (
     <div className="w-full md:h-187.5 mt-24 md:flex gap-10 ">
-      <div className="md:w-[50%] w-full md:h-187.5 h-125 flex items-end md:p-8 p-4 border-4 border-[#E9E3DC] rounded-[30px] bg-[url('../src/assets/burger3.png')] bg-cover">
+      <div className="md:w-[50%] w-full md:h-187.5 h-125 flex items-end md:p-8 p-4 border-4 border-[#E9E3DC] rounded-[30px] bg-[url('../src/assets/burger5.jpg')] bg-cover">
         <div className="md:w-96.5  p-5 bg-[#1E1E1E] rounded-xl">
           <h3 className="md:text-[30px] text-[20px]">
             SALT & VINEGAR FRENCH FRIES
@@ -13,7 +13,7 @@ const OrderCol = () => {
           </p>
         </div>
       </div>
-      <div className="md:w-[50%] w-full md:h-187.5 h-125 flex items-end md:p-8 p-4 md:m-0 mt-10 border-4 border-[#E9E3DC] rounded-[30px] bg-[url('../src/assets/burger1.jpg')] bg-cover">
+      <div className="md:w-[50%] w-full md:h-187.5 h-125 flex items-end md:p-8 p-4 md:m-0 mt-10 border-4 border-[#E9E3DC] rounded-[30px] bg-[url('../src/assets/burger1.webp')] bg-cover">
         <div className="md:w-96.5  p-5 bg-[#1E1E1E] rounded-xl">
           <h3 className="md:text-[30px] text-[20px]">
             CRISPY CHICKEN SANDWICH
