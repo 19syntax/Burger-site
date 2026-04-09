@@ -1,9 +1,29 @@
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import React, { useState } from "react";
 
 const Navbar = () => {
+  const { scrollY } = useScroll();
+  const [hidden, setHidden] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (current) => {
+    const previous = scrollY.getPrevious() ?? 0;
+    if (current > previous && current > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
+
   return (
-    <nav className="relative flex justify-between items-center">
+    <motion.nav
+      animate={{
+        y: hidden ? -140 : 0,
+        opacity: hidden ? 0 : 1,
+      }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+      className="relative flex justify-between items-center"
+    >
       <span className="md:text-[30px] font-semibold">BURGER HEAVEN</span>
       <span className="md:hidden block" onClick={() => setIsMobile((s) => !s)}>
         <svg
@@ -36,7 +56,7 @@ const Navbar = () => {
           </li>
         </ul>
       )}
-    </nav>
+    </motion.nav>
   );
 };
 
